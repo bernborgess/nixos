@@ -71,6 +71,7 @@
     wget
     git
     vscode
+    lutris
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
