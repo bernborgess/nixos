@@ -2,7 +2,6 @@
 
 {
   imports = [ 
-      <nixos-hardware/lenovo/thinkpad/e14/amd>
       ./hardware-configuration.nix
       ./kde.nix
     ];
