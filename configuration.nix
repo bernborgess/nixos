@@ -42,6 +42,10 @@
     heroic
     fastfetch
     qbittorrent
+
+    # Wine dependencies for lutris
+    wineWowPackages.stable
+    winetricks
   ];
 
   programs.steam = {
