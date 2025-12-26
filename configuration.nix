@@ -46,6 +46,8 @@
     # Wine dependencies for lutris
     wineWowPackages.stable
     winetricks
+
+    cemu
   ];
 
   programs.steam = {
