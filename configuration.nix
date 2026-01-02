@@ -31,7 +31,15 @@
 
   nixpkgs.config.allowUnfree = true;
 
+  # Enable flakes
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
+
+  # Register AppImage as binary type
+  programs.appimage.enable = true;
+  programs.appimage.binfmt = true;
+  programs.appimage.package = pkgs.appimage-run.override {
+    extraPkgs = pkgs: [ pkgs.python312 ]; };
+   
 
   # List packages installed in system profile.
   # You can use https://search.nixos.org/ to find more packages (and options).
