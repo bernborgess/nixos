@@ -52,6 +52,7 @@
     cemu
 
     kdePackages.partitionmanager
+    kdePackages.filelight
     tree
     pv
   ];
