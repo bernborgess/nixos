@@ -31,6 +31,8 @@
 
   nixpkgs.config.allowUnfree = true;
 
+  nix.settings.experimental-features = [ "nix-command" "flakes" ];
+
   # List packages installed in system profile.
   # You can use https://search.nixos.org/ to find more packages (and options).
   environment.systemPackages = with pkgs; [
@@ -48,7 +50,13 @@
     winetricks
 
     cemu
+
+    kdePackages.partitionmanager
+    tree
+    pv
   ];
+
+  services.teamviewer.enable = true;
 
   programs.steam = {
     enable = true;
@@ -56,6 +64,7 @@
     dedicatedServer.openFirewall = true;
     localNetworkGameTransfers.openFirewall = true;
   };
+
 
   # This option defines the first version of NixOS you have installed on this particular machine,
   # and is used to maintain compatibility with application data (e.g. databases) created on older NixOS versions.
