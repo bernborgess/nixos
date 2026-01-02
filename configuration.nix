@@ -64,6 +64,7 @@
     tree
     pv
     wl-clipboard
+    signal-desktop
   ];
 
   services.teamviewer.enable = true;
