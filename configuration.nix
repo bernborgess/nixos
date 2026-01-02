@@ -65,6 +65,9 @@
     pv
     wl-clipboard
     signal-desktop
+
+    nodejs
+    yarn
   ];
 
   services.teamviewer.enable = true;
