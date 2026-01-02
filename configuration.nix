@@ -63,6 +63,7 @@
     kdePackages.filelight
     tree
     pv
+    wl-clipboard
   ];
 
   services.teamviewer.enable = true;
