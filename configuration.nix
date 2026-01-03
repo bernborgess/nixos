@@ -71,6 +71,8 @@
   ];
 
   services.teamviewer.enable = true;
+ 
+  programs.direnv.enable = true;
 
   programs.steam = {
     enable = true;
